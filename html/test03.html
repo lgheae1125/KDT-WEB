@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/test03.css" />
+    <script src="/js/test03.js" defer></script>
+  </head>
+  <body>
+    <button type="button" onclick="game(1)">
+      <img src="/images/scissors.png" alt="가위" />
+    </button>
+    <button type="button" onclick="game(2)">
+      <img src="/images/rock.png" alt="바위" />
+    </button>
+    <button type="button" onclick="game(3)">
+      <img src="/images/paper.png" alt="보" />
+    </button>
+
+    <div class="result" id="win"><img src="/images/win.png" alt="승리" /></div>
+    <div class="result" id="draw">
+      <img src="/images/draw.jpg" alt="비겼다" />
+    </div>
+    <div class="result" id="lose_scissors">
+      <img src="/images/lose_scissors.jpg" alt="패배" />
+    </div>
+    <div class="result" id="lose_rock">
+      <img src="/images/lose_rock.jpg" alt="패배" />
+    </div>
+    <div class="result" id="lose_paper">
+      <img src="/images/lose_paper.jpg" alt="패배" />
+    </div>
+  </body>
+</html>
