@@ -22,7 +22,7 @@
             </div>
             <div class="burgerTxt">
               <p>치즈 할라피뇨 더블 쿼터파운더 치즈</p>
-              <p>&#8361; 9,700</p>
+              <p>&#8361; <span class="price">9,700</span></p>
             </div>
           </article>
           <article class="burger">
@@ -31,7 +31,7 @@
             </div>
             <div class="burgerTxt">
               <p>치즈 할라피뇨 쿼터파운더 치즈</p>
-              <p>&#8361; 8,000</p>
+              <p>&#8361; <span class="price">8,000</span></p>
             </div>
           </article>
           <article class="burger">
@@ -40,7 +40,7 @@
             </div>
             <div class="burgerTxt">
               <p>더블 쿼터파운더 치즈</p>
-              <p>&#8361; 8,200</p>
+              <p>&#8361; <span class="price">8,200</span></p>
             </div>
           </article>
           <article class="burger">
@@ -49,7 +49,7 @@
             </div>
             <div class="burgerTxt">
               <p>맥스파이시 상하이 버거</p>
-              <p>&#8361; 6,300</p>
+              <p>&#8361; <span class="price">6,300</span></p>
             </div>
           </article>
           <article class="burger">
@@ -58,7 +58,7 @@
             </div>
             <div class="burgerTxt">
               <p>쿼터파운더 치즈</p>
-              <p>&#8361; 6,300</p>
+              <p>&#8361; <span class="price">6,300</span></p>
             </div>
           </article>
           <article class="burger">
@@ -67,7 +67,7 @@
             </div>
             <div class="burgerTxt">
               <p>토마토 치즈 비프 버거</p>
-              <p>&#8361; 4,600</p>
+              <p>&#8361; <span class="price">4,600</span></p>
             </div>
           </article>
           <article class="burger">
@@ -76,7 +76,7 @@
             </div>
             <div class="burgerTxt">
               <p>빅맥</p>
-              <p>&#8361; 6,300</p>
+              <p>&#8361; <span class="price">6,300</span></p>
             </div>
           </article>
           <article class="burger">
@@ -85,80 +85,94 @@
             </div>
             <div class="burgerTxt">
               <p>맥크리스피 디럭스버거</p>
-              <p>&#8361; 7,600</p>
+              <p>&#8361; <span class="price">7,600</span></p>
             </div>
           </article>
         </section>
-        <section class="burgerOption">
-          <div>
-            <div>
-              <h2>토핑 추가</h2>
-              <p>최대 8개 선택</p>
+        <section class="backdrop">
+          <section class="burgerOption">
+            <div class="txt">
+              <div>
+                <h2>토핑 추가</h2>
+                <p>최대 8개 선택</p>
+              </div>
+              <p>선택</p>
             </div>
-            <p>선택</p>
-          </div>
-          <ul>
-            <li>
-              <input type="checkbox" />
-              <label for="">
-                <span>베이컨 추가</span>
-                <span>+1,000원</span>
-              </label>
-            </li>
-            <li>
-              <input type="checkbox" />
-              <label for="">
-                <span>어니언 추가</span>
-                <span>+1,000원</span>
-              </label>
-            </li>
-            <li>
-              <input type="checkbox" />
-              <label for="">
-                <span>치즈 추가</span>
-                <span>+1,000원</span>
-              </label>
-            </li>
-            <li>
-              <input type="checkbox" />
-              <label for="">
-                <span>스위스치즈 추가</span>
-                <span>+1,000원</span>
-              </label>
-            </li>
-            <li>
-              <input type="checkbox" />
-              <label for="">
-                <span>머시룸 추가</span>
-                <span>+2,900원</span>
-              </label>
-            </li>
-            <li>
-              <input type="checkbox" />
-              <label for="">
-                <span>패티 추가</span>
-                <span>+3,000원</span>
-              </label>
-            </li>
-            <li>
-              <input type="checkbox" />
-              <label for="">
-                <span>토마토 추가</span>
-                <span>+1,000원</span>
-              </label>
-            </li>
-            <li>
-              <input type="checkbox" />
-              <label for="">
-                <span>통새우 추가</span>
-                <span>+2,900원</span>
-              </label>
-            </li>
-          </ul>
-          <button><input type="text" />원 담기</button>
+            <ul>
+              <li>
+                <input type="checkbox" id="bacon" />
+                <label for="bacon">
+                  <span>베이컨 추가</span>
+                  <span class="toppingPrice">+1,000원</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="onion" />
+                <label for="onion">
+                  <span>어니언 추가</span>
+                  <span class="toppingPrice">+1,000원</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="cheese" />
+                <label for="cheese">
+                  <span>치즈 추가</span>
+                  <span class="toppingPrice">+1,000원</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="swissCheese" />
+                <label for="swissCheese">
+                  <span>스위스치즈 추가</span>
+                  <span class="toppingPrice">+1,000원</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="mushroom" />
+                <label for="mushroom">
+                  <span>머시룸 추가</span>
+                  <span class="toppingPrice">+2,900원</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="patty" />
+                <label for="patty">
+                  <span>패티 추가</span>
+                  <span class="toppingPrice">+3,000원</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="tomato" />
+                <label for="tomato">
+                  <span>토마토 추가</span>
+                  <span class="toppingPrice">+1,000원</span>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" id="shrimp" />
+                <label for="shrimp">
+                  <span>통새우 추가</span>
+                  <span class="toppingPrice">+2,900원</span>
+                </label>
+              </li>
+            </ul>
+            <button class="putMenuButton"><span></span> 원 담기</button>
+          </section>
         </section>
       </main>
-      <footer></footer>
+      <footer>
+        <div>
+          <span>(주)맥도날드~</span>
+          <br />
+          <span>경기도 화성시 경기대로 1004</span>
+        </div>
+        <div>
+          <span>사업자번호 : 120-87-65763</span>
+          <span>사업자정보확인</span>
+          <br />
+          <span>통신판매업 : 서울 송파-0515</span>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

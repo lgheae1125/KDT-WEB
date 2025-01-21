@@ -7,8 +7,12 @@
   border-radius: 20px;
   overflow: hidden;
   background-color: #f9f9f9;
-  position: relative;
+  position: fixed;
   box-shadow: 10px 5px 10px #ddd;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 header {
   width: 100%;
@@ -55,6 +59,11 @@ main .burgerMenu .burger {
   padding: 10px;
   background-color: #f1f1f1;
   border-radius: 10px;
+  cursor: pointer;
+  transition: all 100ms;
+}
+main .burgerMenu .burger:hover {
+  filter: brightness(95%);
 }
 main .burgerMenu .burger .burgerImg {
   width: 100%;
@@ -73,18 +82,122 @@ main .burgerMenu .burger .burgerTxt p:nth-child(1) {
 }
 main .burgerMenu .burger .burgerTxt p:nth-child(2) {
   margin-top: 5px;
-  font-size: 0.6rem;
+  font-size: 0.45rem;
   font-weight: 600;
   text-align: center;
   color: #888;
 }
-
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateY(100%);
+  transition: all 334ms;
+  top: 0;
+  left: 0;
+}
 .burgerOption {
   position: absolute;
   width: 400px;
   height: 100%;
   background-color: #f9f9f9;
-  top: 300px;
+  top: 880px;
   left: 0;
   box-shadow: 0px -5px 20px #ccc;
+  padding: 20px;
+  transition: all 334ms;
+}
+.burgerOption .txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.burgerOption .txt > p {
+  margin: 0;
+  background-color: #e8e8e8;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  border-radius: 1.3rem;
+}
+.burgerOption .txt div {
+  display: flex;
+  flex-direction: column;
+}
+.burgerOption .txt div h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+.burgerOption .txt div p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.burgerOption ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
+}
+.burgerOption ul li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px;
+  transition: 80ms;
+}
+.burgerOption ul li:hover {
+  background-color: #e8e8e8;
+}
+.burgerOption ul li:active {
+  transition: 50ms;
+  background-color: #ddd;
+}
+.burgerOption ul li input {
+  margin: 0 10px 0 0;
+  width: 20px;
+  height: 20px;
+}
+.burgerOption ul li label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px 0;
+}
+.burgerOption ul li label span {
+  font-size: 1rem;
+}
+.burgerOption ul li label span:nth-child(2) {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.burgerOption .putMenuButton {
+  width: 100%;
+  height: 50px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #e8e8e8;
+  transition: 80ms;
+}
+.burgerOption .putMenuButton:hover {
+  filter: brightness(95%);
+}
+.burgerOption .putMenuButton:active {
+  filter: brightness(80%);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  row-gap: 10px;
+  padding: 0 30px;
+}
+footer div span {
+  margin: 0;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  color: #555;
 }
